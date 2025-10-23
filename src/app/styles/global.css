@@ -1,0 +1,28 @@
+:root {
+  --Pink400: hsl(0, 36%, 70%);
+  --Red500: hsl(0, 93%, 68%);
+  --Linears: 135deg, from hsla(0, 0%, 100%, 20%), to hsla(0, 100%, 98%, 20%);
+  --Linear: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../../../public/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--Linears);
+  background: url("../../../public/bg-pattern-desktop.svg") no-repeat 100%;
+  background-size: cover;
+}

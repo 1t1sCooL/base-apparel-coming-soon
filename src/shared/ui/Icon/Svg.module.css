@@ -1,0 +1,28 @@
+.svg{
+    background: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+    height: 100%;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.svg:hover{
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+.svg svg{
+    width: 25px;
+    height: 25px;
+}
+@media (max-width: 500px){
+    .svg{
+        width: 5rem;
+    }
+    .svg svg{
+        width: 25px;
+    }
+}

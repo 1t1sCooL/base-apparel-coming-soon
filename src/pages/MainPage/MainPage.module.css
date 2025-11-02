@@ -1,0 +1,31 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    background-image: url('../../../public/hero-desktop.jpg');
+    background-size: auto 100% ;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 62vw;
+    height: 100vh;
+    margin-left: auto;
+}
+@media (max-width: 1800px) {
+    .img{
+        background-position: initial;
+    }
+}
+@media (max-width: 1200px) {
+    .img{
+        display: none;
+    }
+    .container{
+        height: initial;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+}

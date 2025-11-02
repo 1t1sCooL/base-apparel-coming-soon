@@ -1,0 +1,26 @@
+.h1{
+    font-size: 5.4rem;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0;
+}
+.h1 .span{
+    font-weight: 300;
+    color: var(--Pink400);
+}
+@media (max-width: 700px){
+    .h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    .h1 .span{
+        font-weight: 300;
+        color: var(--Pink400);
+    }
+}

@@ -11,6 +11,11 @@
   font-display: swap;
   src: url("../../../public/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;

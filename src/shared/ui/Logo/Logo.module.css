@@ -1,0 +1,18 @@
+.logo{
+    align-self: flex-start;
+    padding: 2rem 1rem 1rem 1rem;
+}
+.logo svg{
+    width: 13rem;
+}
+@media (max-width: 1200px) {
+    .logo{
+        align-self: flex-start;
+        padding: 1.4rem 1rem 2rem 2rem;
+    }
+}
+@media (max-width: 500px){
+    .logo svg{
+        width: 10rem;
+    }
+}

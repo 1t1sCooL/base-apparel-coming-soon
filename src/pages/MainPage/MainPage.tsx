@@ -1,6 +1,6 @@
 import styles from './MainPage.module.css'
-import {Footer} from "@/shared/ui/Footer/Footer.tsx";
-import {Form} from "@/widgets/Form/Form.tsx";
+import {Footer} from "@/shared/ui/Footer/";
+import {Form} from "@/widgets/Form/";
 
 export const MainPage = () => {
     return (<>

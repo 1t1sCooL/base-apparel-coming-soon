@@ -16,7 +16,7 @@
 }
 @media (max-width: 1200px) {
     .mobileImg{
-        background-image: url('../../../public/hero-mobile.jpg');
+        background-image: url('../../../../public/hero-mobile.jpg');
         background-size: 100%;
         background-position: top;
         background-repeat: no-repeat;

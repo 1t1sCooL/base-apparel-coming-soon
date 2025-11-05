@@ -25,8 +25,8 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Vercel](https://base-apparel-coming-soon-jade.vercel.app/)
+- Live Site URL: [mmalabugin.ru/BaseApparelComingSoon](https://mmalabugin.ru/BaseApparelComingSoon/)
 
 ## My process
 

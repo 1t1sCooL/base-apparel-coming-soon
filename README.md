@@ -39,9 +39,10 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [mmalabugin.ru](https://mmalabugin.ru/)
+- Frontend Mentor - [@1t1sCooL](https://www.frontendmentor.io/profile/1t1sCooL)
+- Twitter - [@vi_el_mar](https://www.twitter.com/vi_el_mar)
+- Telegram - [@ItIsCooL](https://t.me/ItIsCooL)
 
 # React + TypeScript + Vite
 

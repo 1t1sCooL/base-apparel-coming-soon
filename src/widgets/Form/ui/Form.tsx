@@ -1,6 +1,6 @@
 import styles from "./Form.module.css";
-import {Logo} from "@/shared/ui/Logo/Logo.tsx";
-import {Description} from "../Description/Description.tsx";
+import {Logo} from "@/shared/ui/Logo/";
+import {Description} from "@/widgets/Description/";
 
 export const Form = () => {
     return (

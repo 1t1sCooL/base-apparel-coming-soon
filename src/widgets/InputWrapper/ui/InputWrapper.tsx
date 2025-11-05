@@ -1,5 +1,5 @@
 import styles from "./InputWrapper.module.css";
-import { Svg } from "@/shared/ui/Icon/Svg.tsx";
+import { Svg } from "@/shared/ui/Icon/";
 import { useState } from "react";
 import {isValidEmail} from "../utils/isValidEmail.ts";
 

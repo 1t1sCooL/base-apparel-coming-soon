@@ -2,7 +2,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {ToastContainer} from "react-toastify";
 import {MainPage} from "@/pages/MainPage";
 
-// const basename = '/BaseApparelComingSoon';
+const basename = '/BaseApparelComingSoon';
 
 export const RouterProvider = () => (
     <BrowserRouter basename={basename ?? '/'}>

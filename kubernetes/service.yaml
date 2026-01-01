@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: base-apparel-coming-soon
+  namespace: default
+spec:
+  selector:
+    app: base-apparel-coming-soon-app
+  ports:
+    - port: 80
+      targetPort: 80
+  type: ClusterIP

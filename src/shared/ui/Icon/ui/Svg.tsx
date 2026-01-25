@@ -1,15 +1,15 @@
-import styles from "./Svg.module.css";
+import { type ButtonHTMLAttributes } from 'react';
 
-interface SvgProps {
-    onClick?: () => void
-}
+import styles from './Svg.module.css';
 
-export const Svg = ({onClick}: SvgProps) => {
-    return (
-        <div className={styles.svg} onClick={onClick}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20">
-                <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/>
-            </svg>
-        </div>
-    )
-}
+type SvgProps = ButtonHTMLAttributes<HTMLButtonElement>;
+
+export const Svg = (props: SvgProps) => {
+  return (
+    <button className={styles.svg} type="submit" aria-label="Submit email" {...props}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20">
+        <path fill="none" stroke="#FFF" strokeWidth="2" d="M1 1l8.836 8.836L1 18.671" />
+      </svg>
+    </button>
+  );
+};

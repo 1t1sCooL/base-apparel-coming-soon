@@ -10,6 +10,8 @@
   right: 0;
   top: 0;
   cursor: pointer;
+  border: none;
+  padding: 0;
 }
 .svg:hover {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));

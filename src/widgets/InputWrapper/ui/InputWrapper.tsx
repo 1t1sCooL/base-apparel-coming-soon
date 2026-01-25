@@ -15,7 +15,8 @@ export const InputWrapper = () => {
 
   const isValid = isValidEmail(value);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e?: React.FormEvent) => {
+    e?.preventDefault();
     setSendError(null);
     if (!isValid) {
       setTouched(true);
@@ -63,7 +64,7 @@ export const InputWrapper = () => {
 
   return (
     <>
-      <div className={styles.inputWrapper}>
+      <form className={styles.inputWrapper} onSubmit={handleSubmit} noValidate>
         <div
           className={`${styles.input} ${value && styles.value} ${
             (touched && !isValid) || isShaking ? styles.shake : ''
@@ -80,12 +81,12 @@ export const InputWrapper = () => {
             placeholder={'Email Address'}
             disabled={sending}
           />
-          <Svg onClick={handleSubmit} />
+          <Svg />
         </div>
         {touched && !isValid && <p>Please provide a valid email</p>}
         {sendError && <p>{sendError}</p>}
-        {submitted && <p style={{ color: 'hsl(0, 36%, 70%)' }}>Thank you for subscribing!</p>}
-      </div>
+        {submitted && <p style={{ color: 'green' }}>Thank you for subscribing!</p>}
+      </form>
     </>
   );
 };

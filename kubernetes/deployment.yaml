@@ -20,14 +20,21 @@ spec:
             - containerPort: 80
           env:
             - name: NODE_ENV
-              value: "production"
+              value: 'production'
+            - name: MAILER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: mailer-secrets
+                  key: MAILER_API_KEY
+            - name: ENV_SUBST_LIST
+              value: 'MAILER_API_KEY,NODE_ENV'
           resources:
             requests:
-              memory: "128Mi"
-              cpu: "100m"
+              memory: '128Mi'
+              cpu: '100m'
             limits:
-              memory: "256Mi"
-              cpu: "500m"
+              memory: '256Mi'
+              cpu: '500m'
           livenessProbe:
             httpGet:
               path: /

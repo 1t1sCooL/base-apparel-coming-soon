@@ -1,28 +1,55 @@
-.inputWrapper{
-    width: 100%;
+.inputWrapper {
+  width: 100%;
 }
-.inputWrapper p{
-    padding: .3rem .5rem .5rem 2.5rem;
-    font-size: 1rem;
-    color: var(--Red500);
-    position: absolute;
+.inputWrapper p {
+  padding: 0.3rem 0.5rem 0.5rem 2.5rem;
+  font-size: 1rem;
+  color: var(--Red500);
+  position: absolute;
 }
-.input{
-    position: relative;
+.input {
+  position: relative;
 }
-.input input{
-    border: 3px solid hsla(0, 93%, 68%, 0.4);
-    border-radius: 2.4rem;
-    width: 100%;
-    padding: 1.4rem 1.4rem 1.4rem 2.5rem;
-    font-size: 1.4rem;
-    color: var(--Pink400);
+.input input {
+  border: 3px solid hsla(0, 93%, 68%, 0.4);
+  border-radius: 2.4rem;
+  width: 100%;
+  padding: 1.4rem 1.4rem 1.4rem 2.5rem;
+  font-size: 1.4rem;
+  color: var(--Pink400);
 }
-.value{
-    color: black;
- }
+.input input:focus {
+  outline: none;
+}
+.value {
+  color: black;
+}
 @media (max-width: 500px) {
-    .input input{
-        padding: 1rem 1rem 1rem 2;
-    }
+  .input input {
+    padding: 1rem 1rem 1rem 2;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }

@@ -85,7 +85,7 @@ export const InputWrapper = () => {
         </div>
         {touched && !isValid && <p>Please provide a valid email</p>}
         {sendError && <p>{sendError}</p>}
-        {submitted && <p style={{ color: 'green' }}>Thank you for subscribing!</p>}
+        {submitted && <p style={{ color: 'hsl(0, 36%, 70%)' }}>Thank you for subscribing!</p>}
       </form>
     </>
   );
